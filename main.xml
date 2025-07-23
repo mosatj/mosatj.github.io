@@ -1,0 +1,79 @@
+<ximpel>
+  <playlist>
+
+    <!-- INICIO VIDEO -->
+    <subject id="inicio">
+      <media>
+        <youtube id="y1yFiotx3qk" start="0" stop="20" leadsTo="pregunta1"/>
+      </media>
+    </subject>
+
+    <!-- PREGUNTA 1 -->
+    <subject id="pregunta1">
+      <media>
+        <image src="media/fondo1.jpg">
+          <overlay text="¿Cuánto es 2 + 2?" x="200px" y="100px" width="1400px" height="80px"/>
+          <overlay text="A) 3" x="200px" y="250px" width="500px" height="100px" leadsTo="resp1_incorrecta"/>
+          <overlay text="B) 4" x="200px" y="400px" width="500px" height="100px" leadsTo="resp1_correcta"/>
+          <overlay text="C) 5" x="200px" y="550px" width="500px" height="100px" leadsTo="resp1_incorrecta"/>
+        </image>
+      </media>
+    </subject>
+
+    <subject id="resp1_correcta">
+      <media>
+        <image src="media/correcto.jpg">
+          <overlay text="¡Correcto! 2 + 2 = 4." x="300px" y="100px" width="1300px" height="80px"/>
+          <overlay text="Siguiente pregunta" x="1500px" y="800px" shape="circle" width="200px" height="200px" leadsTo="pregunta2"/>
+        </image>
+      </media>
+    </subject>
+
+    <subject id="resp1_incorrecta">
+      <media>
+        <image src="media/incorrecto.jpg">
+          <overlay text="Incorrecto. La respuesta era 4." x="300px" y="100px" width="1300px" height="80px"/>
+          <overlay text="Siguiente pregunta" x="1500px" y="800px" shape="circle" width="200px" height="200px" leadsTo="pregunta2"/>
+        </image>
+      </media>
+    </subject>
+
+    <!-- PREGUNTA 2 -->
+    <subject id="pregunta2">
+      <media>
+        <image src="media/fondo2.jpg">
+          <overlay text="¿Cuál es el resultado de 3 × 3?" x="200px" y="100px" width="1400px" height="80px"/>
+          <overlay text="A) 6" x="200px" y="250px" width="500px" height="100px" leadsTo="resp2_incorrecta"/>
+          <overlay text="B) 9" x="200px" y="400px" width="500px" height="100px" leadsTo="resp2_correcta"/>
+          <overlay text="C) 12" x="200px" y="550px" width="500px" height="100px" leadsTo="resp2_incorrecta"/>
+        </image>
+      </media>
+    </subject>
+
+    <subject id="resp2_correcta">
+      <media>
+        <image src="media/correcto.jpg">
+          <overlay text="¡Bien hecho! 3 × 3 = 9." x="300px" y="100px" width="1300px" height="80px"/>
+          <overlay text="Continuar video" x="1500px" y="800px" shape="circle" width="200px" height="200px" leadsTo="continuacion"/>
+        </image>
+      </media>
+    </subject>
+
+    <subject id="resp2_incorrecta">
+      <media>
+        <image src="media/incorrecto.jpg">
+          <overlay text="Ups... era 9." x="300px" y="100px" width="1300px" height="80px"/>
+          <overlay text="Continuar video" x="1500px" y="800px" shape="circle" width="200px" height="200px" leadsTo="continuacion"/>
+        </image>
+      </media>
+    </subject>
+
+    <!-- CONTINUACIÓN DEL VIDEO -->
+    <subject id="continuacion">
+      <media>
+        <youtube id="y1yFiotx3qk" start="20" stop="60"/>
+      </media>
+    </subject>
+
+  </playlist>
+</ximpel>
