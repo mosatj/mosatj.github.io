@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Suma de Riemann con √x</title>
+
+  <!-- MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- CSS -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #343a40;
+    }
+
+    #plot {
+      width: 90%;
+      max-width: 800px;
+      height: 500px; /* ← necesario para que Plotly dibuje */
+      margin: auto;
+    }
+
+    .slider-container {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    input[type=range] {
+      width: 300px;
+      accent-color: teal;
+    }
+
+    label {
+      font-size: 18px;
+    }
+
+    .math {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Visualización de suma de Riemann</h1>
+  <div class="math">
+    \( \displaystyle \int_0^1 \sqrt{x} \, dx \)
+  </div>
+
+  <div class="slider-container">
+    <label for="slider">Número de rectángulos: <strong><span id="nValue">4</span></strong></label><br>
+    <input type="range" id="slider" min="1" max="60" value="4">
+  </div>
+
+  <div id="plot"></div>
+
+  <script>
+    const f = x => Math.sqrt(x);
+
+    function draw(n) {
+      const a = 0, b = 1;
+      const dx = (b - a) / n;
+      const xs = [], ys = [], rects = [];
+
+      for (let i = 0; i <= 100; i++) {
+        const xi = a + i * (b - a) / 100;
+        xs.push(xi);
+        ys.push(f(xi));
+      }
+
+      for (let i = 0; i < n; i++) {
+        const xi = a + i * dx;
+        const height = f(xi);
+        rects.push({
+          type: 'rect',
+          xref: 'x',
+          yref: 'y',
+          x0: xi,
+          x1: xi + dx,
+          y0: 0,
+          y1: height,
+          fillcolor: 'skyblue',
+          opacity: 0.6,
+          line: {width: 1, color: 'black'}
+        });
+      }
+
+      Plotly.newPlot("plot", [{
+        x: xs, y: ys,
+        mode: "lines", name: "f(x) = √x",
+        line: {color: "red"}
+      }], {
+        title: "Aproximación por suma de Riemann",
+        xaxis: {range: [a - 0.05, b + 0.05], title: "x"},
+        yaxis: {range: [0, 1.1], title: "f(x)"},
+        shapes: rects
+      }, {responsive: true});
+    }
+
+    const slider = document.getElementById("slider");
+    const nValue = document.getElementById("nValue");
+    slider.addEventListener("input", () => {
+      const n = parseInt(slider.value);
+      nValue.textContent = n;
+      draw(n);
+    });
+
+    draw(parseInt(slider.value));
+  </script>
+
+</body>
+</html>
