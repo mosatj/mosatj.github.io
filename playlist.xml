@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ximpel>
+    <playlist>
+		<subject id="mySubject1" leadsTo="mySubject2">
+			<media>
+				<video>
+					<source file="media/logo" extensions="mp4" types="video/mp4"/>
+				</video>
+			</media>
+		</subject>
+		<subject id="mySubject2">
+			<score id="scoreA" operation="add" value="5" />
+			<media>
+				<image src="media/test.jpg" duration="5" leadsTo="mySubject3"/>
+            </media>
+        </subject>
+        <subject id="mySubject3" leadsTo="mySubject4">
+			<media>
+				<youtube id="jNQXAC9IVRw" startTime="8" mute="true"/>
+                <youtube id="ScyzaQZGdgY" duration="10">
+					<overlay text="Next subject" height="200px" width="700px" leadsTo="mySubject4" x="100px" y="100px" backgroundColor="#ff00ff"/>
+                    <overlay text="Skip to end" height="200px" width="700px" leadsTo="mySubject5" x="100px" y="500px" backgroundColor="#ff00ff"/>
+                </youtube>
+            </media>
+        </subject>
+        <subject id="mySubject4" leadsTo="mySubject5">
+            <media>
+                <image src="media/zs.jpg" duration="20">
+                    <questions startTime="1" questionTimeLimit="3">
+                        <question answer="false">
+							<score id="scoreA" operation="add" value="1" />
+                            Is a dog a reptile?
+                        </question>
+                        <question answer="true">
+							<score id="scoreA" operation="add" value="1" />
+                            Is a crocodile a reptile?
+                        </question>
+                    </questions>
+                </image>
+            </media>
+        </subject>
+        <subject id="mySubject5">
+            <media>
+                <image src="media/end.png"/>
+            </media>
+        </subject>
+    </playlist>    
+</ximpel>
