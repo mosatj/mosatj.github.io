@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Interactivo Ximpel</title>
+  <script src="ximpel/ximpel.js"></script>
+</head>
+<body>
+  <div id="ximpelPlayer"></div>
+
+  <script>
+    var config = {
+      configUrl: 'config.xml',
+      playlistUrl: 'main.xml'   // O usa 'playlist.xml' si es el que contiene tu interacción
+    };
+
+    var player = new Ximpel.Player('ximpelPlayer', config);
+    player.init();
+  </script>
+</body>
+</html>
