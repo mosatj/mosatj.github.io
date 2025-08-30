@@ -1,0 +1,156 @@
+{
+  "slides": [
+    {
+      "titulo": "Resultados de la delegacion peruana en OM internacional 2024",
+      "resumen": "Medallas y menciones destacadas para el equipo nacional.",
+      "categoria": "Noticias",
+      "fecha": "2024-12-07",
+      "img": "assets/img/slide_1.svg",
+      "alt": "Delegacion peruana",
+      "enlace": "#"
+    },
+    {
+      "titulo": "Investigacion y extension: charlas y talleres 2025",
+      "resumen": "Ciclo de actividades para docentes y estudiantes.",
+      "categoria": "Eventos",
+      "fecha": "2025-02-15",
+      "img": "assets/img/slide_2.svg",
+      "alt": "Charlas y talleres",
+      "enlace": "#"
+    },
+    {
+      "titulo": "Convocatoria de voluntariado para jurados y mentores",
+      "resumen": "Unete a la red nacional de apoyo a la olimpiada.",
+      "categoria": "Convocatoria",
+      "fecha": "2025-03-01",
+      "img": "assets/img/slide_3.svg",
+      "alt": "Convocatoria",
+      "enlace": "#"
+    }
+  ],
+  "relacionadas": [
+    {
+      "titulo": "Resultados de la delegacion peruana en la XXXI ORI",
+      "categoria": "Noticias",
+      "fecha": "2024-12-07",
+      "img": "assets/img/thumb_1.svg",
+      "alt": "Resultados ORI"
+    },
+    {
+      "titulo": "Investigadora comenta uso responsable de IA",
+      "categoria": "Noticias",
+      "fecha": "2025-02-15",
+      "img": "assets/img/thumb_2.svg",
+      "alt": "Entrevista IA"
+    },
+    {
+      "titulo": "La PUCP en ranking por areas tematicas",
+      "categoria": "Noticias",
+      "fecha": "2025-02-10",
+      "img": "assets/img/thumb_3.svg",
+      "alt": "Ranking PUCP"
+    }
+  ],
+  "novedades": [
+    {
+      "titulo": "Nueva guia de estudio por categorias",
+      "categoria": "Material",
+      "fecha": "2025-02-01",
+      "img": "assets/img/thumb_2.svg",
+      "alt": "Guia de estudio"
+    },
+    {
+      "titulo": "Segunda junta de profesores 2025",
+      "categoria": "Comunicado",
+      "fecha": "2025-02-01",
+      "img": "assets/img/thumb_1.svg",
+      "alt": "Junta de profesores"
+    },
+    {
+      "titulo": "Proceso de nominaciones 2025",
+      "categoria": "Comunicado",
+      "fecha": "2025-02-01",
+      "img": "assets/img/thumb_3.svg",
+      "alt": "Nominaciones"
+    }
+  ],
+  "noticias": [
+    {
+      "titulo": "Conviertase en miembro del comite SMC de Area",
+      "categoria": "Noticias",
+      "fecha": "2025-02-15",
+      "img": "assets/img/thumb_1.svg",
+      "alt": "Comite SMC",
+      "resumen": "Se reciben expresiones de interes y sugerencias.",
+      "enlace": "#"
+    },
+    {
+      "titulo": "La PUCP es la mejor universidad del Peru en 9 areas",
+      "categoria": "Noticias",
+      "fecha": "2025-02-12",
+      "img": "assets/img/thumb_2.svg",
+      "alt": "Ranking PUCP",
+      "resumen": "Desempeno sostenido con enfoque en calidad.",
+      "enlace": "#"
+    },
+    {
+      "titulo": "Proceso integrado de obtencion de bioproductos",
+      "categoria": "Noticias",
+      "fecha": "2025-02-05",
+      "img": "assets/img/thumb_3.svg",
+      "alt": "Bioproductos",
+      "resumen": "Premio al Servicio Distinguido Graham Wright 2020.",
+      "enlace": "#"
+    },
+    {
+      "titulo": "Resultados de la delegacion peruana en la XXXI ORI",
+      "categoria": "Noticias",
+      "fecha": "2024-12-07",
+      "img": "assets/img/thumb_1.svg",
+      "alt": "Resultados ORI",
+      "resumen": "Una medalla de oro, cuatro de plata y menciones.",
+      "enlace": "#"
+    },
+    {
+      "titulo": "Agenda de eventos academicos 2025",
+      "categoria": "Eventos",
+      "fecha": "2025-02-18",
+      "img": "assets/img/thumb_2.svg",
+      "alt": "Agenda 2025",
+      "resumen": "Charlas, talleres y encuentros regionales.",
+      "enlace": "#"
+    },
+    {
+      "titulo": "Nuevo banco de problemas nivel secundaria",
+      "categoria": "Material",
+      "fecha": "2025-02-03",
+      "img": "assets/img/thumb_3.svg",
+      "alt": "Banco de problemas",
+      "resumen": "Coleccion actualizada con soluciones detalladas.",
+      "enlace": "#"
+    }
+  ],
+  "destacadas": [
+    {
+      "titulo": "OM-PUCP 2025: cronograma preliminar",
+      "categoria": "Comunicado",
+      "fecha": "2025-02-20",
+      "img": "assets/img/thumb_1.svg",
+      "alt": "Cronograma"
+    },
+    {
+      "titulo": "Convocatoria a mentores y jurados",
+      "categoria": "Convocatoria",
+      "fecha": "2025-02-28",
+      "img": "assets/img/thumb_2.svg",
+      "alt": "Mentores"
+    },
+    {
+      "titulo": "Resultados 2024: premiaciones",
+      "categoria": "Noticias",
+      "fecha": "2024-12-20",
+      "img": "assets/img/thumb_3.svg",
+      "alt": "Premiaciones"
+    }
+  ]
+}
